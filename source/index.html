@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет всем!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div style="display: none">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path fill="currentcolor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </symbol>
+      </svg>
+    </div>
+    <div class="wrapper about">
+      <h1 class="about__title" lang="en">Hello World!</h1>
+
+      <p class="about__illustration">
+        <picture>
+          <source type="image/avif" srcset="img/me-august@1x.avif 1x, img/me-august@2x.avif 2x" width="612" height="816">
+
+          <source type="image/webp" srcset="img/me-august@1x.webp 1x, img/me-august@2x.webp 2x" width="612" height="816">
+
+          <img class="about__image" src="img/me-august@1x.jpg" srcset="img/me-august@2x.jpg 2x" width="612" height="816" fetchpriority="high" alt="Мое селфи в домашней обстановке.">
+        </picture>
+      </p>
+
+      <div class="about__inner">
+        <p class="about__info">Меня зовут Ольга Баженова, и я занимаюсь фронтенд-разработкой. Я знаю <span lang="en">HTML, CSS, JS</span> и <span lang="en">React</span>.</p>
+        <p class="about__info">Я очень люблю веб и хочу понимать его лучше. Поэтому я изучаю, как работает код для бэкенда на <span lang="en">Node</span> и <span lang="en">Express</span>, а также <span lang="en">SQL</span> и <span lang="en">noSQL</span> базы данных. Скорее всего, мне понадобится язык <span lang="en">PHP</span> (судя по вакансиям в моем городе).</p>
+        <p class="about__info">Вот несколько моих <strong>демо-проектов</strong>, построенных на <strong>фронтенд-технологиях</strong>.</p>
+
+        <ul class="about__list" role="list">
+          <li class="about__item project">
+            <h2 class="project__title">
+              <a class="project__link" rel="noopener noreferrer" href="https://ocosmiccobalt.github.io/creative-agency" target="_blank">
+                <svg class="project__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-github"></use>
+                </svg>
+                <span class="project__name" lang="en">Creative Agency</span>
+              </a>
+            </h2>
+            <p class="project__info">Лендинг для креативного агентства (внизу страницы – переключатель цветовых схем: светлой, темной и системной).</p>
+          </li>
+          <li class="about__item project">
+            <h2 class="project__title">
+              <a class="project__link" rel="noopener noreferrer" href="https://ocosmiccobalt.github.io/denim" target="_blank">
+                <svg class="project__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-github"></use>
+                </svg>
+                <span class="project__name" lang="en">Denim</span>
+              </a>
+            </h2>
+            <p class="project__info">Магазин джинсовой одежды, с главной страницей, <a class="project__minor-link" rel="noopener noreferrer" href="https://ocosmiccobalt.github.io/denim/catalog.html" target="_blank">каталогом</a> и <a class="project__minor-link" rel="noopener noreferrer" href="https://ocosmiccobalt.github.io/denim/product-detail.html" target="_blank">карточкой товара</a>. Здесь есть элементы интерфейса, сделанные доступными и адаптивными с помощью ванильного <span lang="en">JavaScript</span>, но пока нет бизнес-логики.</p>
+            <p class="project__info">Сейчас я пишу на React новый вариант этого же проекта – чтобы можно было добавить товар в корзину, оформить заказ и т.д.</p>
+          </li>
+          <li class="about__item project">
+            <h2 class="project__title">
+              <a class="project__link" rel="noopener noreferrer" href="https://ocosmiccobalt.github.io/cust-dev" target="_blank">
+                <svg class="project__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-github"></use>
+                </svg>
+                <span class="project__name" lang="en">Cust Dev</span>
+              </a>
+            </h2>
+            <p class="project__info">Лендинг курса по <span lang="en">Customer Development</span>.</p>
+          </li>
+        </ul>
+
+        <hr class="about__hr">
+
+        <p class="about__info">Вот личный <strong>сайт</strong> друга, сделанный мной. Открыт с января 2020.</p>
+        <div class="project">
+          <h2 class="project__title">
+            <a class="project__link" rel="noopener noreferrer" href="https://vassilyborodin.github.io/" target="_blank">
+              <svg class="project__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+              <span class="project__name">Сайт Василия Бородина</span>
+            </a>
+          </h2>
+          <p class="project__info">Василий Бородин (1982 – 2021) – поэт, автор песен, независимый музыкант и художник, в том числе книжный иллюстратор, и не только.</p>
+          <p class="project__info">Вася говорил, что сайт нужен ему как «собранное и избранное». Он определил, какие его стихи и песни вместе с пьесой (либретто) будут на внутренних страницах, в каком порядке, и сколько будет страниц.</p>
+          <p class="project__info">Мой друг хотел, чтобы сайт был легким, а контента - немного: он понимал людей с неновыми гаджетами и слабым интернетом ^_~.</p>
+          <p class="project__info">Дизайн, верстка, немного <span lang="en">JS</span> (в основном – «ленивая» загрузка айфреймов с <span lang="en">YouTube</span> и <span lang="en">Bandcamp</span>) и некоторая другая работа – мои.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
